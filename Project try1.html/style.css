@@ -1,0 +1,195 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  background: #222; /* Dark background */
+  border-radius: 10px;
+}
+
+/* Scrollbar Thumb (Fire Animation) */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #ff0000, #ff4500, #ffa500, #ff4500, #ff0000);
+  border-radius: 10px;
+  animation: fireGlow 1s infinite alternate;
+}
+
+/* Fire Glow Animation */
+@keyframes fireGlow {
+  0% {
+      box-shadow: 0 0 5px #ff4500, 0 0 10px #ffa500;
+  }
+  100% {
+      box-shadow: 0 0 15px #ff4500, 0 0 20px #ff0000;
+  }
+}
+
+/* Firefox Support */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ff4500 #222;
+}
+
+
+.social-icons a:hover {
+  color: yellow; /* Hover effect */
+}
+
+.nav-links a:hover {
+  color: #ff6f61;
+}
+.social-icons{
+  display: flex;
+}
+nav{
+  background-color: transparent;
+}
+.navbar-nav{
+  margin-left: 15px;
+}
+.social-icons a {
+  color: #333;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+
+}
+
+.social-icons a:hover {
+  color: #ff6f61;
+}
+
+/* Hero Section */
+.Video {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.Video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
+
+.video-text {
+  text-align: center;
+  color: #fff;
+}
+
+.video-text h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.video-text p {
+  font-size: 1.5rem;
+}
+
+/* Under nav bar and video */
+
+/* Container to align cards in a column */
+
+/* Container to align cards in a column */
+/* Container styling */
+/* Container styling */
+/* ========================= */
+/*  General Layout Styling */
+/* ========================= */
+
+/* /* Container that holds all cards * */
+
+.card {
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 0.5rem 0;
+}
+
+.card p {
+  margin: 0.5rem 0;
+  color: #666;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+.close-modal {
+  font-size: 1.5rem;
+  cursor: pointer;
+  float: right;
+}
+.logo-link i{
+  display: none; /* Hide the icon initially */
+}
+
+.logo-link:hover .text {
+  display: none; /* Hide the text on hover */
+}
+
+.logo-link:hover i {
+  display: inline-block; /* Show the icon on hover */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+@media screen {
+  
+}

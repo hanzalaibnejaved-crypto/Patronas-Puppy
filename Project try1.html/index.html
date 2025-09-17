@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patronas Puppies - Home</title>
+    <link rel="shortcut icon" type="image/png" href="gallery/logo without bg.png">
+    <!-- css link=================================== -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- bootstrap css======================= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- bootstrap JS======================= -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- font awesome============================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS animations -->
+   <!-- AOS CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- aos animations -->
+    <!-- google fontss======================================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Tangerine:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <!-- google fonts=========================================== -->
+
+
+    <style>
+        /* @media (max-width: 768px) {
+    .navbar {
+        max-width: 100vh;
+        overflow: hidden;
+        flex-wrap: wrap; /* Prevents it from stretching too much 
+    }
+} */
+ /* Width of the scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+    background: #111; /* Dark background */
+    border-radius: 10px;
+}
+
+/* Scrollbar Thumb with Animated Fire Effect */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #ff0000, #ff4500, #ffa500, #ff4500, #ff0000);
+    border-radius: 10px;
+    animation: fireMove 2s infinite linear;
+}
+
+/* Fire Animation - Moves Gradient */
+@keyframes fireMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Firefox Support */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #ff4500 #111;
+}
+
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.1);
+            /*Translucent background  */
+            backdrop-filter: blur(10px);
+            /*Blurred effect  */
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            font-family: "Abril Fatface", serif;
+            z-index: 1000;
+            /* Ensures navbar stays on top  */
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+            font-family: "Abril Fatface", serif;
+
+        }
+
+        .nav-item {
+            margin: 0 10px;
+        }
+
+        .social-icons a {
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            margin: 0 5px;
+            text-decoration: none;
+        }
+
+        */ .bhai a:hover {
+            color: rgb(255, 0, 0);
+        }
+
+        .footer {
+            background-color: #1e2229;
+            color: #ccc;
+            padding: 40px 0;
+        }
+
+        .footer h5 {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .footer a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: yellow;
+            scale: 1.5;
+        }
+
+        /* .social-icons a {
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            margin: 0 8px;
+            text-decoration: none;
+        } */
+        .social-icons a:hover {
+            color: rgb(255, 0, 0);
+            scale: 1.4;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 10px;
+            border-top: 1px solid #444;
+            margin-top: 20px;
+            color: #888;
+        }
+
+        .why a {
+            color: rgb(255, 255, 255);
+
+        }
+
+        .why a :hover {
+            color: red;
+            scale: 1.4;
+        }
+
+/* Video container */
+.Vid {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Video settings */
+.Vid video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Text container */
+/* .video-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center after animation 
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 2;
+    width: 100%;
+} */
+
+/* Heading styling */
+.hi {
+    font-size: 2rem;
+    font-family: "New Rocker", system-ui;
+}
+
+/* Paragraph styling */
+.hii {
+    font-size: 1.5rem;
+    font-family: "Dancing Script", cursive;
+}
+
+        @keyframes slideRight {
+            from {
+                transform: translateX(-300px);
+                /* Start from the left */
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                /* Move to normal position */
+                opacity: 1;
+            }
+        }
+        @media (max-width: 768px) {
+    .Vid video {
+        display: none; /* Hide video */
+    }
+    
+    .Vid {
+        background: url('Media\ query.webp') no-repeat center center/cover;
+        height: 100vh; /* Make sure it covers full screen */
+    }
+}
+@media (max-width: 768px) {
+    .trans-card { /* Adjust the class based on your card container */
+        display: none;
+    }
+}
+        .card {
+ 
+    background: rgba(0, 0, 0, 0.6); 
+    color: #2c3e50;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    /* min-height: 200px; */
+}
+
+.card img {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%); /* Centers image vertically */
+    width: 120px; /* Adjust size */
+    height: auto;
+    /* opacity: 0.8; */
+    z-index: 1;
+}
+
+.card .text {
+    margin-left: 150px; /* Push text to the right to avoid overlap */
+    z-index: 2;
+}
+
+       
+
+        /* Card Styling */
+        .card {
+            width: 90%;
+            max-width: 800px;
+            padding: 20px;
+            margin: 60px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transition: transform 0.8s ease-in-out, opacity 0.5s ease-in-out;
+            text-align: left;
+        }
+
+        /* Alternating Slide-In Animation */
+        .card:nth-of-type(odd) {
+            transform: translateX(-600px);
+        }
+
+        .card:nth-of-type(even) {
+            transform: translateX(600px);
+        }
+
+        /* Card Appears */
+        .card.show {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        /* Card Hides */
+        .card.hide {
+            opacity: 0;
+            transform: translateX(600px);
+        }
+
+        .card:nth-of-type(even).hide {
+            transform: translateX(-600px);
+        }
+
+        /* Background Colors for Cards */
+        .one {
+            background: rgba(255, 222, 233, 1);
+        }
+
+        .two {
+            background: rgba(255, 211, 165, 1);
+        }
+
+        .three {
+            background: rgba(133, 255, 189, 1);
+        }
+
+        .four {
+            background: rgba(194, 233, 251, 1);
+        }
+
+        .five {
+            background: rgba(250, 208, 196, 1);
+        }
+h1{
+    margin: 30px;
+    margin-top: 50px;
+}
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .card {
+                width: 95%;
+            }
+        }
+
+        /* The animated container */
+        .container-ab {
+                        position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #f8f8f8; */
+    /* padding: 30px; */
+    /* border-radius: 15px;/ */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 900px;
+    border-radius: 30px;
+    margin: 50px auto;
+            opacity: 0;
+            /* Initially hidden */
+            transform: translateY(100px);
+            /* Start below */
+            transition: transform 0.8s ease-in-out, opacity 0.5s ease-in-out;
+        }
+
+        /* When visible, move up and appear */
+        .container-ab.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* When hiding, move back down */
+        .container-ab.hide {
+            opacity: 0;
+            transform: translateY(100px);
+        }
+
+        /* Text section */
+        .text-section-ab {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .text-section-ab h2 {
+            margin-bottom: 10px;
+        }
+
+        .text-section-ab p {
+            line-height: 1.6;
+        }
+
+        /* Image section */
+        .image-sectionab img {
+            width: 300px;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .main{
+            margin-top: 40px ;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        /* Creating a grid layout for the gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+            width: 80vw;
+            max-width: 800px;
+            height: 80vw;
+            max-height: 800px;
+            position: relative;
+        }
+        /* Styling for each image container */
+        .gallery div {
+            background-color: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            border: 2px solid #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        /* Ensuring images fit properly */
+        .gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        /* Centering the logo */
+        .logo-cell {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* Styling the logo container */
+        .paw-logo {
+            width: 200px;
+            height: 200px;
+            /* background-color: #d35400; */
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); */
+            /* border: 1px solid white; */
+        }
+        /* Responsive styling for tablets */
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+                width: 90vw;
+                height: 90vw;
+            }
+            .logo-cell {
+                grid-column: 1 / 3;
+                grid-row: 2 / 3;
+            }
+            .paw-logo {
+                width: 150px;
+                height: 150px;
+            }
+        }
+        /* Responsive styling for mobile screens */
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(6, 1fr);
+                width: 95vw;
+                height: auto;
+            }
+            .logo-cell {
+                grid-column: 1 / 2;
+                grid-row: 3 / 4;
+            }
+            .paw-logo {
+                width: 120px;
+                height: 120px;
+                font-size: 18px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container-ab {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .text-section-ab {
+                padding-right: 0;
+            }
+
+            .image-sectionab img {
+                margin-top: 20px;
+            }
+        }
+
+        .faker {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            background-color: #4a6577;
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        .faker-card {
+            background: linear-gradient(135deg, #ffcc00, #ff6600);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            width: 300px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .faker-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid white;
+            margin-bottom: 10px;
+        }
+
+        .name {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .fakercomment {
+            font-size: 20px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#" style=" font-family: New Rocker, system-ui;"><img
+                    src="gallery/logo without bg.png" style="filter: brightness(0%);"> Patronas puppy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav" >
+                    <li class="nav-item">
+                        <a class="nav-link text-white logo-link" href="home.html">
+                             
+                            <span class="text">home</span>
+                            <i class="fa-solid fa-house-chimney"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white logo-link" href="breed/breds2.html">
+                             
+                            <span class="text">breed</span>
+                            <i class="fa-solid fa-bone"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white logo-link" href="about.html">
+                            <span class="text">about</span>
+                            <i class="fa-solid fa-question"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white logo-link" href="Contact.html"
+                            style=" font-family: Abril Fatface, serif;">
+                            <span class="text">contact</span>
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </li>
+                    <div style="display: flex;" class="why">
+                        <li class="nav-item" style="padding-top: 9px;">
+                            <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li class="nav-item" style="padding-top: 9px;">
+                            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="nav-item" style="padding-top: 9px;">
+                            <a href="https://www.youtube.com/@allaspectsoflife2009"><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </div>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Background video Section -->
+    <div class="Vid">
+        <video autoplay muted loop>
+            <source src="Untitled  Made with FlexClip (2).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-text" data-aos="fade-left" data-aos-duration="1000000"
+            style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                   text-align: center; color: white; width: 100%;">
+            <h1 style="font-family: New Rocker, system-ui; font-size: 2.5rem;">Welcome to Patronas Puppies</h1>
+            <p style="font-family: Dancing Script, cursive; font-size: 1.5rem;">Your Ultimate Dog Encyclopedia</p>
+        </div>
+    </div>
+        <!-- second container==================== -->
+        <div class="container-ab"style="background: linear-gradient(135deg, #f4f4f9, #7896b4);">
+            <div class="text-section-ab" style="flex: 1; padding: 20px;  ">
+                <h2 style="text-align: center; color: #1E3A5F ; font-family: 'Poppins', sans-serif;">Welcome to Our Encyclopedia</h2>
+                <p style="margin-bottom: 10px; color: #d35400;"><i class="fa-solid fa-earth-americas" style="margin-right: 10px;"></i> Explore a vast collection of knowledge.</p>
+                <p style="margin-bottom: 10px;color: #d35400;"><i class="fa-solid fa-fire-flame-curved" style="margin-right: 10px;"></i> Get reliable and well-researched information.</p>
+                <p style="margin-bottom: 10px;color: #d35400;"><i class="fa-solid fa-heart-crack" style="margin-right: 10px;"></i> A perfect place for dog lovers.</p>
+                <p style="margin-bottom: 10px;color: #d35400;"><i class="fa-solid fa-paw" style="margin-right: 10px;"></i> Access minds of different people about dogs.</p>
+                <p style="margin-bottom: 10px;color: #d35400;"><i class="fa-solid fa-brain" style="margin-right: 10px;"></i> Expand your understanding of dogs.</p>
+                <p style="margin-bottom: 10px; color: #d35400;"><i class="fa-solid fa-book" style="margin-right: 10px;"></i> Designed for students, researchers, and curious minds!</p>
+            </div>
+            <div class="image-sectionab" style="flex: 1; display: flex; justify-content: center;">
+                <img src="Gallery/Fluffy.png" alt="Encyclopedia Image" style="max-width: 80%; height: auto; border-radius: 10px;">
+            </div>
+        </div>
+    
+
+    <!-- content-------------------- -->
+<div class="trans-card" style="margin: auto;">
+<h1 style="font-family: dancing script,cursive;margin-left: 500px;">Fun facts and real stories</h1>
+    <div class="card one" >
+        
+        <!-- Image (Overlapping on Left Side) -->
+        <img src="gallery/first img.png" alt="Dog"
+            style="position: absolute; left: 10px; width: 200px; height: auto; ; z-index: 1;">
+
+        <div class="text" style="margin-left: 220px;">  <!-- Adds space so text does not overlap -->
+            <h3>Dogs Interesting Facts</h3>
+            <p style="font-family: 'Playfair Display', serif;font-style: oblique; color: #111;">
+                DOGS CAN LEARN UP TO 250 WORDS AND GESTURES, JUST LIKE TODDLERS! <br>
+                PUPPIES ARE DEAF AND BLIND WHEN THEY ARE BORN.<br>
+                DOGS' SMELLING SENSE IS SO GOOD THAT THEY CAN SMELL YOUR FEELINGS.<br>
+                A DOG'S NOSE IS ITS FINGERPRINT.<br>
+                DOGS SWEAT THROUGH THEIR FEET.<br>
+                PUPPIES CAN BE BORN GREEN.<br>
+                THOUGH BASENJIS ARE TECHNICALLY THE ONLY BARKLESS DOGS IN THE WORLD.<br>
+                SHAKESPEARE COINED THE WORD "PUPPY."<br>
+            </p>
+        </div>
+    </div>
+    <img src="gallery/logo without bg.png" alt="" style="margin-left:600px ;">
+    <div class="card two" >
+        
+        <!-- Image (Overlapping on Left Side) -->
+        <img src="gallery/The_famous_statue_of_Hachiko__9409375665_-removebg-preview.png" alt="Dog"
+            style="position: absolute; left: 10px; width: 200px; height: auto; ; z-index: 1;">
+
+        <div class="text" style="margin-left: 220px;">  <!-- Adds space so text does not overlap -->
+            <h3>Hachiko – The Loyal Dog</h3>
+            <p style="font-family: 'Playfair Display', serif; font-size: 20px; color: #111;">
+                JAPAN (1920s-1930s)
+
+                HACHIKO, AN AKITA DOG IN JAPAN, IS ONE OF THE MOST FAMOUS SYMBOLS OF LOYALTY. HIS OWNER, PROFESSOR
+                HIDESABURO UENO, USED TO TAKE THE TRAIN TO WORK, AND EVERY EVENING, HACHIKO WAITED AT THE SHIBUYA
+                STATION FOR HIS RETURN. <span style="color: rgb(255, 41, 41); font-style: italic;"> ONE DAY, THE PROFESSOR PASSED AWAY AT WORK AND NEVER RETURNED. BUT HACHIKO
+                CONTINUED TO WAIT FOR HIM EVERY SINGLE DAY FOR</span> <b style="color: rgb(138, 0, 0);"> NINE YEARS</b> AT THE STATION.
+                
+                PEOPLE IN TOKYO WERE SO TOUCHED BY HIS DEVOTION THAT THEY BUILT A STATUE OF HACHIKO OUTSIDE SHIBUYA
+                STATION. HIS STORY WAS LATER TURNED INTO A MOVIE CALLED HACHI: A DOG’S TALE. 
+            </p>
+        </div>
+        
+    </div>
+    <img src="gallery/logo without bg.png" alt="" style="margin-left:600px ;">
+    <div class="card three" >
+        
+        <!-- Image (Overlapping on Left Side) -->
+        <img src="gallery/Fluffy.png" alt="Dog"
+            style="position: absolute; left: 10px; width: 200px; height: auto; ; z-index: 1;">
+
+        <div class="text" style="margin-left: 220px;">  <!-- Adds space so text does not overlap -->
+            <h3> DUKE – THE SHELTER DOG</h3>
+            <p style="font-family: 'Playfair Display', serif; font-size: 20px;color: #111;">
+               
+
+                 UNITED STATES (2012)
+                
+                DUKE WAS A RESCUE DOG ADOPTED BY A LOVING FAMILY. ONE NIGHT, HE SUDDENLY JUMPED ONTO HIS OWNERS’
+                BED, SHAKING AND BARKING UNCONTROLLABLY. IT WAS UNUSUAL BEHAVIOR, SO THE FAMILY GOT UP TO CHECK ON
+                THEIR 9-WEEK-OLD BABY, HARPER.
+                
+                TO THEIR SHOCK,<span style="color: red;"> <b> THE BABY WAS NOT BREATHING!</b> </span> THEY QUICKLY CALLED AN AMBULANCE, AND PARAMEDICS SAVED
+                THE BABY’S LIFE JUST IN TIME. IF IT WEREN’T FOR DUKE’S URGENT WARNING, THE CHILD MIGHT NOT HAVE
+                SURVIVED. DUKE PROVED THAT RESCUE DOGS CAN BECOME LIFESAVERS TOO.
+            </p>
+        </div>
+    </div>
+    <img src="gallery/logo without bg.png" alt="" style="margin-left:600px ;">
+    <div class="card four" >
+        
+        <!-- Image (Overlapping on Left Side) -->
+        <img src="gallery/lg nahin rahi.png" alt="Dog"
+            style="position: absolute; left: 10px; width: 200px; height: auto; ; z-index: 1;">
+
+        <div class="text" style="margin-left: 220px;">  <!-- Adds space so text does not overlap -->
+            <h3> KABANG – THE HEROIC DOG</h3>
+            <p style="font-family: 'Playfair Display', serif; font-size: 20px;color: #111;">
+               
+
+ PHILIPPINES (2012)
+
+KABANG, A STREET DOG IN THE PHILIPPINES, BECAME A NATIONAL HERO WHEN SHE SAVED TWO YOUNG GIRLS FROM
+AN ONCOMING MOTORCYCLE. <span style="color: red;"> <b>SHE JUMPED IN FRONT OF THE BIKE</b></span>, LOSING HER SNOUT IN THE PROCESS, BUT SHE
+SURVIVED.
+
+HER STORY SPREAD WORLDWIDE, AND PEOPLE FROM DIFFERENT COUNTRIES DONATED MONEY FOR HER LIFE-SAVING
+SURGERY IN THE UNITED STATES. DESPITE HER INJURIES, KABANG LIVED HAPPILY AND CONTINUED TO RECEIVE
+LOVE FROM PEOPLE ALL OVER THE WORLD.
+            </p>
+        </div>
+    </div>
+    <img src="gallery/logo without bg.png" alt="" style="margin-left:600px ;">
+    <div class="card five" >
+        
+        <!-- Image (Overlapping on Left Side) -->
+        <img src="gallery/two dogs.png" alt="Dog"
+            style="position: absolute; left: 10px; width: 200px; height: auto; ; z-index: 1;">
+
+        <div class="text" style="margin-left: 220px;">  <!-- Adds space so text does not overlap -->
+            <h3>      BRETAGNE – THE 9/11 RESCUE DOG</h3>
+      
+<p style="font-family: 'Playfair Display', serif;font-size: 20px;color: #111;">
+             UNITED STATES (2001-2016)
+            
+            BRETAGNE, A GOLDEN RETRIEVER, WAS ONE OF THE SEARCH-AND-RESCUE DOGS WHO WORKED AT GROUND ZERO AFTER....
+
+            THE <span style="color: #ff0000;"> <b>9/11 ATTACKS</b></span> IN NEW YORK. SHE SEARCHED THROUGH THE RUBBLE FOR SURVIVORS AND PROVIDED COMFORT TO
+            FIREFIGHTERS AND FAMILIES AFFECTED BY THE TRAGEDY.
+            
+            EVEN AFTER HER RETIREMENT, BRETAGNE CONTINUED WORKING AS A THERAPY DOG, HELPING CHILDREN LEARN TO
+            READ AND PROVIDING EMOTIONAL SUPPORT TO VETERANS. SHE LIVED UNTIL THE AGE OF 16 AND WAS GIVEN A
+            HERO’S FAREWELL BEFORE PASSING AWAY IN 2016
+        </p>
+        </div>
+    </div>
+</div>
+<img src="gallery/logo without bg.png" alt="" style="margin-left:600px  ;">
+
+<!-- ------------------------------------- -->
+<h1 style="font-family: caveat,cursive;margin-left: 500px;">Our satisfied visitors</h1>
+    <div class="faker" style="align-items: center;">
+
+        <div class="faker-card">
+            <img class="profile-img" src="https://randomuser.me/api/portraits/men/1.jpg" alt="User 1">
+            <div class="name" style="font-family:New Rocker, system-ui ;">John Doe</div>
+            <p class="fakercomment" style="font-size: 26px; color: aliceblue; "><b> "This website is amazing! I found
+                    everything I needed and the experience was fantastic."</b></p>
+        </div>
+
+
+        <div class="faker-card">
+            <img class="profile-img" src="https://randomuser.me/api/portraits/men/2.jpg" alt="User 2">
+            <div class="name" style="font-family:New Rocker, system-ui ;">Sarah Smith</div>
+            <p class="fakercomment" style="font-size: 26px; color: aliceblue;"> <b> "I love the design and the easy
+                    navigation. Keep up the great work!"</b></p>
+        </div>
+
+
+        <div class="faker-card">
+            <img class="profile-img" src="https://randomuser.me/api/portraits/men/18.jpg" alt="User 3">
+            <div class="name" style="font-family:New Rocker, system-ui ;">David Johnson</div>
+            <p class="fakercomment" style="font-size: 26px; color: aliceblue;"> <b> "Very informative and
+                    well-structured. Highly recommended to everyone!" </b></p>
+        </div>
+        <div data-aos="zoom-in"class="paw-logo" data-aos-duration="7000"  >
+        <img  src="gallery/_first_img-removebg-preview.png"  alt="">
+         </div>
+    </div>
+    <!-- content------------------- -->
+    <h1 style="font-family: New rocker,cursive;margin-left: 500px;">Jaw dropping gallery</h1>
+     <!-- gallery========================== -->
+     <div class="main">
+        <div class="gallery">
+            
+              
+            
+            <div data-aos="flip-right" data-aos-duration="1" style="grid-column: 1 / 2; grid-row: 1 / 3;border-radius: 15px;">
+                <img src="gallery/cuto poppy (1).webp" alt="Dog 1">
+            </div>
+            <div data-aos="flip-right" data-aos-duration="1" style="grid-column: 2 / 3; grid-row: 1 / 2;border-radius: 15px;">
+                <img src="gallery/Daal e.webp" alt="Dog 2">
+            </div>
+            <div  data-aos="flip-right" data-aos-duration="1" style="grid-column: 3 / 4; grid-row: 1 / 3;border-radius: 15px;">
+                <img src="gallery/cuto poppy (2).webp" alt="Dog 3">
+            </div>
+            <div  data-aos="flip-right" data-aos-duration="1" style="grid-column: 1 / 2; grid-row: 3 / 4;border-radius: 15px;">
+                <img src="gallery/cute dog.webp" alt="Dog 4">
+            </div>
+            <div data-aos="flip-right"data-aos-duration="1"	 style="grid-column: 2 / 4; grid-row: 3 / 4;border-radius: 15px;">
+                <img src="Gallery/galery 16 9.webp" alt="Dog 5">
+            </div>
+            
+                <div  data-aos="zoom-in"class="paw-logo" data-aos-duration="13"  style="margin: auto; background: linear-gradient(135deg, #ffe88d, #ffaeae)"  >
+                    <img src="gallery/logo without bg.png" alt="Logo" style="filter: brightness(0%);width: 80%; height: 80%; object-fit: contain;">
+                </div>
+            
+            
+        </div>
+    </div>
+    <!-- gallery----------------------------------- -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 " style="margin-top: 50px;">
+        <div class="container">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-md-4">
+                    <h5 style="font-family: Lobster, sans-serif;
+                font-weight: 400;
+                font-style: normal;">About Patrona Puppy</h5>
+                    <p>This website is for dog lovers who want to learn about different breeds and care tips. We share
+                        research and experiences to help you explore more about these amazing creatures.</p>
+                    <div class="social-icons" style="margin-left: 100px;padding-top: 30px;">
+                        <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                        <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact Info Section -->
+                <div class="col-md-4 sike">
+                    <h5>Contact Info</h5>
+                    <p><strong>Address:</strong> 10749 NW Ambassador Drive, Kansas City, MO 64153 USA</p>
+                    <p><strong>Telephone:</strong> +1 6500 4242</p>
+                    <p><strong>Email:</strong> <a href="mailto:info@patrona.com"
+                            style="  color: rgb(255, 255, 255);text-decoration: none;">info@patrona.com</a></p>
+                </div>
+
+                <!-- Quick Links Section -->
+                <div class="col-md-4  ">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled quick">
+                        <li><a href="home.html" style="  color: yellow;text-decoration: none;">Home</a></li>
+                        <li><a href="breed.html" style="  color: yellow;text-decoration: none;">Dog Breeds</a></li>
+                        <li><a href="sitemap.html" style="  color: yellow;text-decoration: none;">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>Copyright © 2025 All rights reserved | This website is made by Hanzala bin Javed.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="project.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    </script>
+    <script>
+        
+        document.addEventListener("DOMContentLoaded", function () {
+            const elements = document.querySelectorAll("h2, .card");
+
+            function checkScroll() {
+                const triggerBottom = window.innerHeight * 0.85;
+
+                elements.forEach((el) => {
+                    const elTop = el.getBoundingClientRect().top;
+                    if (elTop < triggerBottom) {
+                        el.classList.add("show");
+                        el.classList.remove("hide");
+                    } else {
+                        el.classList.remove("show");
+                        el.classList.add("hide");
+                    }
+                });
+            }
+
+            window.addEventListener("scroll", checkScroll);
+            checkScroll(); // Run on page load
+        });
+
+
+
+        // Select the animated container
+        let icontainer = document.querySelector(".container-ab");
+
+        //  Function to check visibility and apply animations
+        function checkVisibility() {
+            let rect = icontainer.getBoundingClientRect(); // Get position of container
+            let windowHeight = window.innerHeight; // Get height of the visible window
+
+            if (rect.top < windowHeight - 100 && rect.bottom > 100) {
+                //  If container is in view, apply "show" class
+                icontainer.classList.add("show");
+                icontainer.classList.remove("hide");
+            } else {
+                //  If container goes out of view, apply "hide" class
+                icontainer.classList.add("hide");
+                icontainer.classList.remove("show");
+            }
+        }
+
+        //  Run the function when page loads and when user scrolls
+        window.addEventListener("scroll", checkVisibility);
+        checkVisibility(); // Run once on load
+    </script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init(); // Initialize AOS
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+</html>
