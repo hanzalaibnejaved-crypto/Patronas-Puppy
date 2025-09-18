@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patronas Puppies - about</title>
+  <link rel="shortcut icon" type="image/png" href="gallery/logo without bg.png">
+  <!-- css link=================================== -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- font awesome============================== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- AOS animations -->
+ <!-- AOS CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <!-- aos animations -->
+  <!-- google fontss======================================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<style>
+/* General Styles */
+
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+    background: #111; /* Dark background */
+    border-radius: 10px;
+}
+
+/* Scrollbar Thumb with Animated Fire Effect */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #ff0000, #ff4500, #ffa500, #ff4500, #ff0000);
+    border-radius: 10px;
+    animation: fireMove 2s infinite linear;
+}
+
+/* Fire Animation - Moves Gradient */
+@keyframes fireMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Firefox Support */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #ff4500 #111;
+}
+/* Modal styling */
+.modal {
+position: fixed; /* Stays in place even when scrolling */
+top: 0; /* Covers the full screen */
+left: 0; /* Starts from the left */
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+display: flex; /* Enables centering */
+justify-content: center; /* Centers horizontally */
+align-items: center; /* Centers vertically */
+opacity: 0; /* Initially hidden */
+visibility: hidden; /* Prevents interaction */
+transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Smooth fade-in effect */
+}
+
+/* Show modal when active */
+.modal.show {
+opacity: 1; /* Makes modal visible */
+visibility: visible; /* Allows interaction */
+}
+
+/* Modal content box */
+.modal-content {
+background: white; /* White background */
+width: 500px; /* Modal width */
+padding: 20px; /* Adds spacing */
+text-align: center; /* Centers text */
+border-radius: 10px; /* Rounded corners */
+position: relative; /* Allows absolute positioning of child elements */
+transform: scale(0.8); /* Initially smaller */
+transition: transform 0.3s ease-in-out; /* Smooth scaling effect */
+}
+
+/* Animate the modal content when it appears */
+.modal.show .modal-content {
+transform: scale(1); /* Restores full size */
+}
+
+/* Close button styling */
+.close-btn {
+position: absolute; /* Positioned inside the modal */
+top: 10px; /* Top spacing */
+right: 15px; /* Right spacing */
+background: red; /* Red background */
+color: white; /* White text */
+border: none; /* Removes default border */
+width: 30px; /* Button size */
+height: 30px; /* Button size */
+font-size: 20px; /* Text size */
+cursor: pointer; /* Indicates clickability */
+border-radius: 50%; /* Circular button */
+transition: transform 0.2s ease-in-out; /* Smooth rotation */
+}
+
+/* Rotate the close button when hovered */
+.close-btn:hover {
+transform: rotate(180deg); /* Spins the button */
+} 
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.1);
+            /*Translucent background  */
+            backdrop-filter: blur(10px);
+            /*Blurred effect  */
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            font-family: "Abril Fatface", serif;
+            z-index: 1000;
+            /* Ensures navbar stays on top  */
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+            font-family: "Abril Fatface", serif;
+
+        }
+
+        .nav-item {
+            margin: 0 10px;
+        }
+
+        .social-icons a {
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            margin: 0 5px;
+            text-decoration: none;
+        }
+
+        */ .bhai a:hover {
+            color: rgb(255, 0, 0);
+        }
+
+        .footer {
+            background-color: #1e2229;
+            color: #ccc;
+            padding: 40px 0;
+        }
+
+        .footer h5 {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .footer a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: yellow;
+            scale: 1.5;
+        }
+
+        /* .social-icons a {
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            margin: 0 8px;
+            text-decoration: none;
+        } */
+        .social-icons a:hover {
+            color: rgb(255, 0, 0);
+            scale: 1.4;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 10px;
+            border-top: 1px solid #444;
+            margin-top: 20px;
+            color: #888;
+        }
+
+        .why a {
+            color: rgb(255, 255, 255);
+
+        }
+
+        .why a :hover {
+            color: red;
+            scale: 1.4;
+        }
+
+/* Video container */
+.Vid {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Video settings */
+.Vid video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Text container */
+/* .video-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center after animation 
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 2;
+    width: 100%;
+} */
+
+/* Heading styling */
+.hi {
+    font-size: 2rem;
+    font-family: "New Rocker", system-ui;
+}
+
+/* Paragraph styling */
+.hii {
+    font-size: 1.5rem;
+    font-family: "Dancing Script", cursive;
+}
+
+        @keyframes slideRight {
+            from {
+                transform: translateX(-300px);
+                /* Start from the left */
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                /* Move to normal position */
+                opacity: 1;
+            }
+        }
+        @media (max-width: 768px) {
+    .Vid video {
+        display: none; /* Hide video */
+    }
+    
+    .Vid {
+        background: url('Media\ query.webp') no-repeat center center/cover;
+        height: 100vh; /* Make sure it covers full screen */
+    }
+}
+@media (max-width: 768px) {
+    .trans-card { /* Adjust the class based on your card container */
+        display: none;
+    }
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative; /* Added for positioning context */
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #2c3e50; /* Dark blue for headings */
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+/* Section Styles */
+.section {
+  background: rgb(69,230,249);
+background: linear-gradient(90deg, rgba(69,230,249,1) 0%, rgba(98,114,255,1) 100%); /* White background for sections */
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px; /* Space between sections */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 700px; /* Fixed width for both sections */
+  box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+.section .content {
+  padding: 10px;
+}
+
+/* Position the second section to the right */
+.section.right {
+  position: absolute;
+  right: 20px; /* Distance from the right edge */
+}
+
+
+/* Team Section Styles */
+.team-section {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(135deg, #f4f4f9, #e0e0e7, #d0d0d7); /* White background for sections */
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 400px; /* Added margin to avoid overlap */
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  width: 30%;
+  margin: 20px 0;
+}
+
+.team-member img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.team-member h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin: 10px 0;
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Button Styles */
+.button {
+  background-color: #ff6f61; /* Coral color for buttons */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 15px;
+}
+
+.button:hover {
+  background-color: #e65a50; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section {
+    width: 100%; /* Full width on small screens */
+    position: static; /* Reset positioning for mobile */
+  }
+
+  .section.right {
+    position: static; /* Reset positioning for mobile */
+  }
+
+  .team-section {
+    margin-top: 20px; /* Reset margin for mobile */
+  }
+
+  .team-member {
+    width: 100%;
+  }
+}
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#" style=" font-family: New Rocker, system-ui;"><img
+                src="gallery/logo without bg.png" style="filter: brightness(0%);"> Patronas puppy</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav" >
+                <li class="nav-item">
+                    <a class="nav-link text-white logo-link" href="index.html">
+                         
+                        <span class="text">home</span>
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white logo-link" href="breed/breds2.html">
+                         
+                        <span class="text">breed</span>
+                        <i class="fa-solid fa-bone"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white logo-link" href="about.html">
+                        <span class="text">about</span>
+                        <i class="fa-solid fa-question"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white logo-link" href="Contact.html"
+                        style=" font-family: Abril Fatface, serif;">
+                        <span class="text">contact</span>
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                </li>
+                <div style="display: flex;" class="why">
+                    <li class="nav-item" style="padding-top: 9px;">
+                        <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li class="nav-item" style="padding-top: 9px;">
+                        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li class="nav-item" style="padding-top: 9px;">
+                        <a href="https://www.youtube.com/@allaspectsoflife2009"><i class="fab fa-youtube"></i></a>
+                    </li>
+                </div>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Background video Section -->
+<div class="Vid">
+    <video autoplay muted loop>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="video-text" data-aos="fade-left" data-aos-duration="1000000"
+        style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+               text-align: center; color: white; width: 100%;">
+        <h1 style="font-family: New Rocker, system-ui; font-size: 2.5rem;">Welcome to About us page</h1>
+        <p style="font-family: Dancing Script, cursive; font-size: 1.5rem;color: #ffffff;">Who we are?</p>
+    </div>
+</div>
+  <div class="container">
+    <!-- Why Save Dogs Section -->
+    <div class="section" data-aos="fade-right">
+      <div class="content">
+        <h2>Why Save Dogs?</h2>
+        <p>
+          Dogs are loyal companions who bring joy, love, and comfort to our lives. They deserve to be treated with kindness and respect. Unfortunately, many dogs face abandonment, abuse, and neglect. By saving dogs, we not only give them a second chance at life but also enrich our own lives with their unconditional love.
+        </p>
+      </div>
+    </div>
+    <img src="gallery/first img.png" alt="" style="position: absolute;right: 0px;top: 10px;margin-right:60px ;width: 250px;height: auto;">
+
+    <!-- Countries with Most Dogs Killed Section -->
+    <div class="section right" data-aos="fade-left">
+      <div class="content">
+        <h2>Where Are Dogs Most at Risk?</h2>
+        <p>
+          In some countries, dogs face significant threats due to cultural practices, lack of animal welfare laws, or overpopulation. For example, in countries like China and parts of Southeast Asia, dogs are often killed for meat or due to stray overpopulation. It's crucial to raise awareness and advocate for better animal protection laws globally.
+        </p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1" style="background-color: #ff0000;">
+          Take action
+      </button>
+      </div>
+    </div>
+    
+
+    <img src="gallery/3D_china-removebg-preview.png" alt=""style="position: absolute; margin-top: 0px; margin-left: 50px; width: 150px; height: auto; z-index: 1;width: 400px;height:400px">
+
+    <!-- Team Members Section -->
+    <div class="team-section" style="gap: 50px;" data-aos="fade-up">
+      <h2 style="margin-top: 100px;padding-right: 100px;">Our Team</h2>
+      <div class="team-members">
+        <div class="team-member" data-aos="zoom-in">
+          <img src="gallery/469307509_878403974143248_4215458432648399337_n-removebg-preview.png" alt="Team Member 1" style="background-color: #333333;">
+          <h3>Hen</h3>
+          <p>Founder & CEO</p>
+        </div>
+        <div class="team-member" data-aos="zoom-in" data-aos-delay="100">
+          <img src="gallery/Screenshot__33_-removebg-preview (1).png" alt="Team Member 2" style="background-color: #333333;">
+          <h3>Moose</h3>
+          <p>Animal Welfare Specialist</p>
+        </div>
+        <div class="team-member" data-aos="zoom-in" data-aos-delay="200">
+          <img src="gallery/1742781666280-removebg-preview.png"style="background-color: #333333;" alt="Team Member 3">
+          <h3>Abd villers</h3>
+          <p>Volunteer Coordinator</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 " style="margin-top: 50px;">
+      <div class="container">
+          <div class="row">
+              <!-- About Section -->
+              <div class="col-md-4">
+                  <h5 style="font-family: Lobster, sans-serif;
+              font-weight: 400;
+              font-style: normal;">About Patrona Puppy</h5>
+                  <p>This website is for dog lovers who want to learn about different breeds and care tips. We share
+                      research and experiences to help you explore more about these amazing creatures.</p>
+                  <div class="social-icons" style="margin-left: 100px;padding-top: 30px;">
+                      <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                      <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                      <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                      <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+                  </div>
+              </div>
+
+              <!-- Contact Info Section -->
+              <div class="col-md-4 sike">
+                  <h5>Contact Info</h5>
+                  <p><strong>Address:</strong> asdcv jnjkjhg bngfdxcv</p>
+                  <p><strong>Telephone:</strong> +92 34567865</p>
+                  <p><strong>Email:</strong> <a href="mailto:info@patrona.com"
+                          style="  color: rgb(255, 0, 0);text-decoration: none;">info@patrona.com</a></p>
+              </div>
+
+              <!-- Quick Links Section -->
+              <div class="col-md-4  ">
+                  <h5>Quick Links</h5>
+                  <ul class="list-unstyled quick">
+                      <li><a href="index.html" style="  color: yellow;text-decoration: none;">Home</a></li>
+                      <li><a href="breed.html" style="  color: yellow;text-decoration: none;">Dog Breeds</a></li>
+                      <li><a href="sitemap.html" style="  color: yellow;text-decoration: none;">Contact</a></li>
+                  </ul>
+              </div>
+          </div>
+          <br>
+          
+          <!-- Footer Bottom -->
+          <div class="footer-bottom">
+              <p>Copyright © 2025 All rights reserved | This website is made by Hanzala bin Javed.</p>
+          </div>
+      </div>
+  </footer>
+    <!-- Bootstrap Modal -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="modal1Label">Donate us</h5>
+                  <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">x</button>
+              </div>
+              <div class="modal-body">
+                Donating to our Puppy website helps us continue providing valuable resources, care tips, and support for dog lovers everywhere. Your contributions enable us to maintain the site, create new content, and ensure that all information remains up-to-date and accessible. By donating, you’re helping us promote responsible pet ownership and improve the lives of puppies and their owners. Every donation, no matter the size, makes a significant impact in keeping this community thriving. Join us in our mission to make the world a better place for puppies and their families!
+              </div>
+          </div>
+      </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+    });
+    
+
+</script>
+ <!-- Bootstrap JS -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

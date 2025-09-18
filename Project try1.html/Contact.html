@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Patronas Puppy</title>
+  <link rel="shortcut icon" type="image/png" href="gallery/logo without bg.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- AOS CSS -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- google fontss======================================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+  <!-- google fonts=========================================== -->
+
+  <style>
+ /* Width of the scrollbar */
+ ::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+    background: #111; /* Dark background */
+    border-radius: 10px;
+}
+
+/* Scrollbar Thumb with Animated Fire Effect */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #ff0000, #ff4500, #ffa500, #ff4500, #ff0000);
+    border-radius: 10px;
+    animation: fireMove 2s infinite linear;
+}
+
+/* Fire Animation - Moves Gradient */
+@keyframes fireMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Firefox Support */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #ff4500 #111;
+}
+.navbar {
+    
+            background-color: rgba(0, 0, 0, 0.1);
+            /*Translucent background  */
+            backdrop-filter: blur(10px);
+            /*Blurred effect  */
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            font-family: "Abril Fatface", serif;
+            z-index: 1000;
+            /* Ensures navbar stays on top  */
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+            font-family: "Abril Fatface", serif;
+
+        }
+
+        .nav-item {
+            margin: 0 10px;
+        }
+        /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+        @keyframes slideRight {
+            from {
+                transform: translateX(-300px);
+                /* Start from the left */
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                /* Move to normal position */
+                opacity: 1;
+            }
+        }
+        @media (max-width: 768px) {
+    .Vid video {
+        display: none; /* Hide video */
+    }
+    
+    .Vid {
+        background: url('Media\ query.webp') no-repeat center center/cover;
+        height: 100vh; /* Make sure it covers full screen */
+    }
+}
+
+.social-icons a {
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            margin: 0 5px;
+            text-decoration: none;
+        }
+
+        */ .bhai a:hover {
+            color: rgb(255, 0, 0);
+        }
+
+        .footer {
+            background-color: #1e2229;
+            color: #ccc;
+            padding: 40px 0;
+        }
+
+        .footer h5 {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .footer a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: yellow;
+            scale: 1.5;
+        }
+
+        /* .social-icons a {
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            margin: 0 8px;
+            text-decoration: none;
+        } */
+        .social-icons a:hover {
+            color: rgb(255, 0, 0);
+            scale: 1.4;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 10px;
+            border-top: 1px solid #444;
+            margin-top: 20px;
+            color: #888;
+        }
+
+        .why a {
+            color: rgb(255, 255, 255);
+
+        }
+
+        .why a :hover {
+            color: red;
+            scale: 1.4;
+        }
+
+/* Video container */
+.Vid {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Video settings */
+.Vid video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+    /* Contact Form Gradient */
+    .contact-form {
+      background: linear-gradient(135deg, #F4EAD5, #FFE5B4);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+
+    /* Image Adjustment */
+    .contact-form img {
+      position: absolute;
+      right: -150px; /* Adjust based on your preference */
+      top: 50%;
+      transform: translateY(-50%);
+      width: 250px;
+      height: auto;
+      z-index: 1;
+    }
+
+    @media (max-width: 1200px) {
+      .contact-form img {
+        right: -100px; /* Adjust for smaller screens */
+      }
+    }
+
+    @media (max-width: 992px) {
+      .contact-form img {
+        right: -50px; /* Adjust for tablets */
+      }
+    }
+
+    @media (max-width: 768px) {
+      .contact-form img {
+        display: none; /* Hide image on smaller screens */
+      }
+    }
+
+    /* AOS Animations */
+    /* [data-aos] {
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    } */
+
+    /* Buttons */
+    .btn-primary {
+      background-color: #ff6f61;
+      border: none;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #ff1100;
+      transform: scale(1.1);
+    }
+
+    /* Accordion */
+    .accordion-button {
+      background-color: #3d6aff;
+      color: rgb(0, 0, 0);
+      transition: background-color 0.3s ease;
+    }
+
+    .accordion-button:hover {
+      background-color: #9d93ff;
+    }
+
+    .accordion-body {
+      background-color: #f8f9fa;
+    }
+
+    /* Map */
+    iframe {
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      height: 400px;
+    }
+
+    @media (max-width: 768px) {
+      iframe {
+        height: 300px; /* Adjust map height for smaller screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar (Unchanged) -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#" style=" font-family: New Rocker, system-ui;"><img
+                src="gallery/logo without bg.png" style="filter: brightness(0%);"> Patronas puppy</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav" >
+                <li class="nav-item">
+                    <a class="nav-link text-white logo-link" href="index.html">
+                         
+                        <span class="text">home</span>
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white logo-link" href="breed/breds2.html">
+                         
+                        <span class="text">breed</span>
+                        <i class="fa-solid fa-bone"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white logo-link" href="about.html">
+                        <span class="text">about</span>
+                        <i class="fa-solid fa-question"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white logo-link" href="Contact.html"
+                        style=" font-family: Abril Fatface, serif;">
+                        <span class="text">contact</span>
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                </li>
+                <div style="display: flex;" class="why">
+                    <li class="nav-item" style="padding-top: 9px;">
+                        <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                    </li>
+                    <li class="nav-item" style="padding-top: 9px;">
+                        <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li class="nav-item" style="padding-top: 9px;">
+                        <a href="https://www.youtube.com/@allaspectsoflife2009"><i class="fab fa-youtube"></i></a>
+                    </li>
+                </div>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+  <!-- Video Section -->
+  <div class="Vid">
+    <video autoplay muted loop>
+      <source src="video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+     <div class="video-text" data-aos="fade-left" data-aos-duration="1000000"
+            style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                   text-align: center; color: white; width: 100%;">
+            <h1 style="font-family: New Rocker, system-ui; font-size: 2.5rem;">Welcome to Patronas Puppies contact page</h1>
+            <p style="font-family: Dancing Script, cursive; font-size: 1.5rem;">How to contact us?</p>
+        </div>
+  </div>
+   
+
+  <!-- Contact Section -->
+  <main class="container my-5">
+    <h1 class="text-center mb-4" data-aos="fade-up">Get in Touch with Us</h1>
+    <p class="text-center" data-aos="fade-up" data-aos-delay="100">Have a question or need assistance? Fill out the form below or reach us through our contact details.</p>
+    <div class="row">
+      <div class="col-md-7" data-aos="fade-right">
+        <div class="contact-form">
+          <h3>Contact Form</h3>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" pattern="[A-Za-z\s]+">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea class="form-control" id="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+          
+        </div>
+      </div>
+      <div class="col-md-5" data-aos="fade-left">
+        <h3>Contact Details</h3>
+        <p><i class="fas fa-map-marker-alt"></i> A-130 Alfalah housing project ,Malir halt ,KArachi</p>
+        <p><i class="fas fa-phone"></i> +92 3343114053</p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:info@patrona.com">Xyz.pk</a></p>
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="https://facebook.com"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="https://instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="https://youtube.com"><i class="fab fa-youtube fa-2x"></i></a>
+        </div>
+        <img src="gallery/Musculiar dog.png" alt="Fluffy Dog" style="   position:absolute ;right: 0px ;margin-right: 0px;  top:80px;height: 400px;width: auto;">
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <section class="my-5">
+      <h2 class="text-center" data-aos="fade-up">Frequently Asked Questions</h2>
+      <div class="accordion" id="faqAccordion">
+      
+        <!-- Question 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+              What are the essential vaccinations for dogs?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              <strong>Core vaccinations</strong> are crucial for protecting your dog from life-threatening diseases. These include:
+              <ul>
+                <li><strong>Rabies</strong>: Required by law in most places, as it is fatal and transmissible to humans.</li>
+                <li><strong>Distemper</strong>: A highly contagious viral disease affecting the respiratory, gastrointestinal, and nervous systems.</li>
+                <li><strong>Parvovirus</strong>: A severe and often fatal disease causing vomiting, diarrhea, and dehydration, especially in puppies.</li>
+                <li><strong>Adenovirus (Canine Hepatitis)</strong>: Affects the liver and can be fatal.</li>
+              </ul>
+              Non-core vaccines (recommended based on lifestyle and location) include Bordetella (Kennel Cough), Leptospirosis, and Lyme Disease. Always consult your vet for the best vaccination schedule.
+            </div>
+          </div>
+        </div>
+  
+        <!-- Question 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+              How do I house train my dog?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              House training requires patience, consistency, and positive reinforcement. Follow these steps:
+              <ol>
+                <li><strong>Establish a Routine</strong>: Take your dog outside at regular intervals (e.g., after meals, naps, and playtime).</li>
+                <li><strong>Choose a Designated Spot</strong>: Always take your dog to the same area to encourage consistency.</li>
+                <li><strong>Use Positive Reinforcement</strong>: Praise and reward your dog with treats immediately after they eliminate outside.</li>
+                <li><strong>Watch for Signs</strong>: Sniffing, circling, or whining may indicate your dog needs to go.</li>
+                <li><strong>Clean Accidents Thoroughly</strong>: Use an enzymatic cleaner to remove odors and prevent repeat accidents.</li>
+              </ol>
+              Avoid punishment, as it can create fear and confusion. Most puppies are fully house-trained by 4-6 months.
+            </div>
+          </div>
+        </div>
+  
+        <!-- Question 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+              What human foods are toxic to dogs?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Many human foods are dangerous for dogs and should be avoided. These include:
+              <ul>
+                <li><strong>Chocolate</strong>: Contains theobromine, which is toxic and can cause vomiting, seizures, or death.</li>
+                <li><strong>Grapes and Raisins</strong>: Can lead to kidney failure.</li>
+                <li><strong>Onions and Garlic</strong>: Damage red blood cells, causing anemia.</li>
+                <li><strong>Xylitol</strong> (found in sugar-free gum and candy): Causes a rapid drop in blood sugar and liver failure.</li>
+                <li><strong>Alcohol</strong>: Even small amounts can be toxic.</li>
+                <li><strong>Avocado</strong>: Contains persin, which can cause vomiting and diarrhea.</li>
+                <li><strong>Caffeine</strong>: Found in coffee, tea, and energy drinks, it can be fatal in large amounts.</li>
+              </ul>
+              Always keep these foods out of reach and consult your vet if your dog ingests something toxic.
+            </div>
+          </div>
+        </div>
+  
+        <!-- Question 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+              How much exercise does my dog need?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              The amount of exercise a dog needs depends on their breed, age, and energy level:
+              <ul>
+                <li><strong>High-Energy Breeds</strong> (e.g., Border Collies, Huskies): 1-2 hours of vigorous exercise daily.</li>
+                <li><strong>Medium-Energy Breeds</strong> (e.g., Labradors, Golden Retrievers): 30-60 minutes of moderate exercise daily.</li>
+                <li><strong>Low-Energy Breeds</strong> (e.g., Bulldogs, Basset Hounds): 20-30 minutes of light exercise daily.</li>
+              </ul>
+              Puppies and young dogs generally need more exercise, while senior dogs may require shorter, gentler activities. Mental stimulation (e.g., puzzle toys, training) is also important to keep your dog happy and healthy.
+            </div>
+          </div>
+        </div>
+  
+        <!-- Question 5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+              How do I introduce a new dog to my home?
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Introducing a new dog to your home requires careful planning to ensure a smooth transition:
+              <ol>
+                <li><strong>Prepare Your Home</strong>: Remove hazards and set up a designated space with a bed, food, water, and toys.</li>
+                <li><strong>Introduce Gradually</strong>: Allow your new dog to explore one room at a time.</li>
+                <li><strong>Introduce Family Members Slowly</strong>: Let the dog approach people at their own pace.</li>
+                <li><strong>Introduce Other Pets Carefully</strong>: Keep dogs on leashes during the first meeting and supervise interactions.</li>
+                <li><strong>Establish a Routine</strong>: Stick to a consistent schedule for feeding, walks, and playtime.</li>
+                <li><strong>Be Patient</strong>: Give your new dog time to adjust, which can take days or even weeks.</li>
+              </ol>
+              Provide plenty of positive reinforcement and avoid overwhelming your dog with too much attention or activity initially.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!-- Accordion Items (Unchanged) -->
+      </div>
+    </section>
+
+    <!-- Google Map Embed -->
+    <section class="my-5">
+      <h2 class="text-center" data-aos="fade-up">Find Us Here</h2>
+      <div class="text-center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1809.6570662596096!2d67.15064242509064!3d24.887264366927006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb339999415e0c3%3A0x36742eee0fd9c291!2sAptech%20Metro%20Star%20Gate!5e0!3m2!1sen!2s!4v1742423123749!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (Unchanged) -->
+  <footer class="bg-dark text-white text-center py-4 " style="margin-top: 50px;">
+    <div class="container">
+        <div class="row">
+            <!-- About Section -->
+            <div class="col-md-4">
+                <h5 style="font-family: Lobster, sans-serif;
+            font-weight: 400;
+            font-style: normal;">About Patrona Puppy</h5>
+                <p>This website is for dog lovers who want to learn about different breeds and care tips. We share
+                    research and experiences to help you explore more about these amazing creatures.</p>
+                <div class="social-icons" style="margin-left: 100px;padding-top: 30px;">
+                    <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                    <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Contact Info Section -->
+            <div class="col-md-4 sike">
+                <h5>Contact Info</h5>
+                <p><strong>Address:</strong> 10749 NW Ambassador Drive, Kansas City, MO 64153 USA</p>
+                <p><strong>Telephone:</strong> +1 6500 4242</p>
+                <p><strong>Email:</strong> <a href="mailto:info@patrona.com"
+                        style="  color: rgb(255, 255, 255);text-decoration: none;">info@patrona.com</a></p>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="col-md-4  ">
+                <h5 style="color: rgb(255, 255, 255);">Quick Links</h5>
+                <ul class="list-unstyled quick">
+                    <li><a href="index.html" style="  color: yellow;text-decoration: none;">Home</a></li>
+                    <li><a href="breed.html" style="  color: yellow;text-decoration: none;">Dog Breeds</a></li>
+                    <li><a href="sitemap.html" style="  color: yellow;text-decoration: none;">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>Copyright © 2025 All rights reserved | This website is made by Hanzala bin Javed.</p>
+        </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- AOS JS -->
+  <script>
+    AOS.init(); // Initialize AOS
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+</body>
+</html>
